@@ -7,7 +7,7 @@ with open(sys.argv[1]) as f:
 
 	for line in f:
 		# Each line has up to 4 32-bit values prepended by the #cur_addr
-		data.append(line.strip().split()[1:])
+		data.append(line[1:].strip().split()[1:])
 
 BUSYBOX_PATH = '/home/konrad/busybox/busybox'
 
